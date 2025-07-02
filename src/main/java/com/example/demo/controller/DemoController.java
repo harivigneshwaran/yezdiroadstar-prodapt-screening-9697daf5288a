@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class DemoController {
     private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
-
     @GetMapping("/remove")
     public ResponseEntity<?> removeContent(@RequestParam (required = false) String value) {
         if(value!=null)
